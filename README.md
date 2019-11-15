@@ -26,12 +26,12 @@
 
 6. run python train.py --logtostderr --pipeline_config_path=/home/glenn/Documents/train_ssd/my_train_ssd/train_config/ssd_mobilenet_v1_pets.config --train_dir=train_logs 2>&1 | tee logs/train_$now.txt &
   
- it will take some time
- creates 4 files 
-      * model.ckpt-****.meta
-      * model.ckpt-****.index
-      * model.ckpt-****.data-00000-of-00001
-      * pipeline.config
+ it will take some time,
+ creates 4 files :
+      - model.ckpt-****.meta
+      - model.ckpt-****.index
+      - model.ckpt-****.data-00000-of-00001
+      - pipeline.config
 
 CONVERTING 3 FILES ABOVE to .pb
   open the script export_inference_graph.py , see usage and run it on terminal
