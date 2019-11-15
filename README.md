@@ -28,10 +28,10 @@
   
  it will take some time,
  creates 4 files :
-      - model.ckpt-****.meta
-      - model.ckpt-****.index
-      - model.ckpt-****.data-00000-of-00001
-      - pipeline.config
+  - model.ckpt-****.meta
+  - model.ckpt-****.index
+  - model.ckpt-****.data-00000-of-00001
+  - pipeline.config
 
 CONVERTING 3 FILES ABOVE to .pb
   open the script export_inference_graph.py , see usage and run it on terminal
