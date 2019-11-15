@@ -9,9 +9,9 @@
            create train.record and test.record ,see usage
 4. in pascal_label_map.pbtxt , just add item if your class or object to be detected is greater than 3 
 5. in ssd_mobilenet_v1_pets.config edit :
-        num_classes: 3  # depending on your class/item 
-        batch_size:   # depends on what you want
-        fine_tune_checkpoint:  # path of your model.ckpt
+   - num_classes: 24  # depending on your class/item 
+   - batch_size:   # depends on what you want
+   - fine_tune_checkpoint:  # path of your model.ckpt
 
         train_input_reader:
             input_path:    # path of your train.record file
