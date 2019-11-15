@@ -5,10 +5,10 @@
 3. copy 30% of your .xml files from annotations folder to a new folder, mine is named annotations_2 for testing
 
 4. convert .xml files to .csv files using script xml_to_csv.py  (create train_labels.csv and test_labels.csv) see usage
-5  in generate_tfrecord.py find class_text_to_int(row_label) change it depending on your class-names, 
+5.  in generate_tfrecord.py find class_text_to_int(row_label) change it depending on your class-names, 
            create train.record and test.record ,see usage
-4. in pascal_label_map.pbtxt , just add item if your class or object to be detected is greater than 3 
-5. in ssd_mobilenet_v1_pets.config edit :
+6. in pascal_label_map.pbtxt , just add item if your class or object to be detected is greater than 3 
+7. in ssd_mobilenet_v1_pets.config edit :
    - num_classes: 24  # depending on your class/item 
    - batch_size:   # depends on what you want
    - fine_tune_checkpoint:  # path of your model.ckpt
@@ -24,7 +24,7 @@
 
         TRAINING !!!!
 
-6. run python train.py --logtostderr --pipeline_config_path=/home/glenn/Documents/train_ssd/my_train_ssd/train_config/ssd_mobilenet_v1_pets.config --train_dir=train_logs 2>&1 | tee logs/train_$now.txt &
+8. run python train.py --logtostderr --pipeline_config_path=/home/glenn/Documents/train_ssd/my_train_ssd/train_config/ssd_mobilenet_v1_pets.config --train_dir=train_logs 2>&1 | tee logs/train_$now.txt &
   
  it will take some time,
  creates 4 files :
