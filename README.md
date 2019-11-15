@@ -24,7 +24,7 @@
 
         TRAINING !!!!
 
-8. run python train.py --logtostderr --pipeline_config_path=/home/glenn/Documents/train_ssd/my_train_ssd/train_config/ssd_mobilenet_v1_pets.config --train_dir=train_logs 2>&1 | tee logs/train_$now.txt &
+8. run python train.py --logtostderr --pipeline_config_path=/your path/ssd_mobilenet_v1_pets.config --train_dir=train_logs 2>&1 | tee logs/train_$now.txt &
   
  it will take some time,
  creates 4 files :
