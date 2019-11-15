@@ -1,4 +1,4 @@
-# ssd_training
+# ssd_training_complete_guide
 
 1. gather data for costum dataset to a folder named images
 2. hand label dataset using labelImg(need to be installed), will be converted to .xml files  (saved to folder named annotations for training) 
