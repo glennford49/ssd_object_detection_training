@@ -13,13 +13,13 @@
    - batch_size:   # depends on what you want
    - fine_tune_checkpoint:  # path of your model.ckpt
 
-        train_input_reader:
-            input_path:    # path of your train.record file
-            label_map_path: # path of your pascal_label_map.pbtxt
-            num_examples: 800   # edit it
-        eval_input_reader:
-            input_path:    # path of your test.record file
-            label_map_path: # path of your pascal_label_map.pbtxt
+   - train_input_reader:
+    - input_path:    # path of your train.record file
+    - label_map_path: # path of your pascal_label_map.pbtxt
+    - num_examples: 800   # edit it
+   -eval_input_reader:
+    - input_path:    # path of your test.record file
+    - label_map_path: # path of your pascal_label_map.pbtxt
 
 
         TRAINING !!!!
